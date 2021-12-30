@@ -18,6 +18,13 @@ namespace CatWorx.BadgeMaker
             // String Interpolation
             Console.WriteLine($"greating {greeting}");
             Console.WriteLine("greeting: {0}", greeting);
+
+            // Numbers
+            // How do you find the area of a square? Area = side * side
+            double side = 3.14;
+            double area = (side * side);
+            Console.WriteLine("area: {0}", area);
+            Console.WriteLine("area: {0}", area.GetType());
         }
     }
 }
