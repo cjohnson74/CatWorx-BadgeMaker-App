@@ -9,8 +9,8 @@ namespace CatWorx.BadgeMaker
         {
             Console.WriteLine("Hello, World!");
             string greeting = "Hello";
-            greeting = greeting + "World";
-            Console.WriteLine("greeting" + greeting);
+            greeting = greeting + " World";
+            Console.WriteLine("greeting: " + greeting);
         }
     }
 }
