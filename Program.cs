@@ -8,9 +8,16 @@ namespace CatWorx.BadgeMaker
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
+
+            // Data Types
+            // Strings
             string greeting = "Hello";
             greeting = greeting + " World";
             Console.WriteLine("greeting: " + greeting);
+
+            // String Interpolation
+            Console.WriteLine($"greating {greeting}");
+            Console.WriteLine("greeting: {0}", greeting);
         }
     }
 }
