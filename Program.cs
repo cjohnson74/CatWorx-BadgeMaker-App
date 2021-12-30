@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
+using System.Collections.Generic;
 
 namespace CatWorx.BadgeMaker
 {
@@ -38,7 +39,7 @@ namespace CatWorx.BadgeMaker
             int num = 10;
             num += 100; // 10 + 100 = 110
             Console.WriteLine(num); // 110
-            num ++; // 110 + 1 = 111
+            num++; // 110 + 1 = 111
             Console.WriteLine(num); // 111
 
             // Booleans
@@ -54,6 +55,38 @@ namespace CatWorx.BadgeMaker
             int newInt = Convert.ToInt16(stringNum);
             Console.WriteLine(newInt.GetType()); // System.Int32
             Console.WriteLine(newInt + newInt); // 4
+
+            // Data Structures
+
+            // Dictionaries
+
+            Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
+
+            myScoreBoard.Add("firstInning", 10);
+            myScoreBoard.Add("secondInning", 20);
+            myScoreBoard.Add("thirdInning", 30);
+            myScoreBoard.Add("fourthInning", 40);
+            myScoreBoard.Add("fifthInning", 50);
+
+            // Alternative example of how you can pass a comma-separated list of key-value pairs in braces,
+            // for each entry we wish to create
+            Dictionary<string, int> myScoreBoard2 = new Dictionary<string, int>(){
+                { "firstInning", 10 },
+                { "secondInning", 20},
+                { "thirdInning", 30},
+                { "fourthInning", 40},
+                { "fifthInning", 50}
+            };
+
+            Console.WriteLine("----------------");
+            Console.WriteLine("  Scoreboard");
+            Console.WriteLine("----------------");
+            Console.WriteLine("Inning |  Score");
+            Console.WriteLine("   1   |    {0}", myScoreBoard["firstInning"]);
+            Console.WriteLine("   2   |    {0}", myScoreBoard["secondInning"]);
+            Console.WriteLine("   3   |    {0}", myScoreBoard["thirdInning"]);
+            Console.WriteLine("   4   |    {0}", myScoreBoard["fourthInning"]);
+            Console.WriteLine("   5   |    {0}", myScoreBoard["fifthInning"]);
         }
     }
 }
