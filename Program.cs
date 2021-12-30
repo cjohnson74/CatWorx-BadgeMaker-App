@@ -40,6 +40,12 @@ namespace CatWorx.BadgeMaker
             Console.WriteLine(num); // 110
             num ++; // 110 + 1 = 111
             Console.WriteLine(num); // 111
+
+            // Booleans
+
+            bool isCold = true;
+            Console.WriteLine(isCold ? "drink" : "add ice"); // output: drink
+            Console.WriteLine(!isCold ? "drink" : "add ice"); // output: add ice
         }
     }
 }
