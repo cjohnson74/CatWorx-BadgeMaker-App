@@ -46,6 +46,14 @@ namespace CatWorx.BadgeMaker
             bool isCold = true;
             Console.WriteLine(isCold ? "drink" : "add ice"); // output: drink
             Console.WriteLine(!isCold ? "drink" : "add ice"); // output: add ice
+
+            // Data Type Conversions
+
+            string stringNum = "2";
+            Console.WriteLine(stringNum.GetType()); // System.String
+            int newInt = Convert.ToInt16(stringNum);
+            Console.WriteLine(newInt.GetType()); // System.Int32
+            Console.WriteLine(newInt + newInt); // 4
         }
     }
 }
