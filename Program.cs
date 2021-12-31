@@ -87,6 +87,14 @@ namespace CatWorx.BadgeMaker
             Console.WriteLine("   3   |    {0}", myScoreBoard["thirdInning"]);
             Console.WriteLine("   4   |    {0}", myScoreBoard["fourthInning"]);
             Console.WriteLine("   5   |    {0}", myScoreBoard["fifthInning"]);
+
+            // Arrays
+
+            string[] favFoods = new String[3]{ "pizza", "doughnuts", "icecream" };
+            string firstFood = favFoods[0];
+            string secondFood = favFoods[1];
+            string thirdFood = favFoods[2];
+            Console.WriteLine("I like {0}, {1}, and {2}", firstFood, secondFood, thirdFood);
         }
     }
 }
