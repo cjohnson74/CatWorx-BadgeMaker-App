@@ -105,6 +105,12 @@ namespace CatWorx.BadgeMaker
             employees.Add("Lana");
 
             Console.WriteLine("My employees include {0}, {1}, {2}, {3}, {4}.", employees[0], employees[1], employees[2], employees[3], employees[4]);
+
+            // Loops
+
+            for (int i = 0; i < employees.Count; i++) {
+                Console.WriteLine(employees[i]);
+            }
         }
     }
 }
