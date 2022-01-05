@@ -8,106 +8,117 @@ namespace CatWorx.BadgeMaker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Console.WriteLine("Hello, World!");
 
-            // Data Types
-            // Strings
-            string greeting = "Hello";
-            greeting = greeting + " World";
-            Console.WriteLine("greeting: " + greeting);
+            // // Data Types
+            // // Strings
+            // string greeting = "Hello";
+            // greeting = greeting + " World";
+            // Console.WriteLine("greeting: " + greeting);
 
-            // String Interpolation
-            Console.WriteLine($"greating {greeting}");
-            Console.WriteLine("greeting: {0}", greeting);
+            // // String Interpolation
+            // Console.WriteLine($"greating {greeting}");
+            // Console.WriteLine("greeting: {0}", greeting);
 
-            // Numbers
-            // How do you find the area of a square? Area = side * side
-            double side = 3.14;
-            double area = (side * side);
-            Console.WriteLine("area: {0}", area);
-            Console.WriteLine("area: {0}", area.GetType());
+            // // Numbers
+            // // How do you find the area of a square? Area = side * side
+            // double side = 3.14;
+            // double area = (side * side);
+            // Console.WriteLine("area: {0}", area);
+            // Console.WriteLine("area: {0}", area.GetType());
 
-            // Math Operators
+            // // Math Operators
 
-            Console.WriteLine(2 * 3); // 6  // Basic Arithmetic: +, -, /, *
-            Console.WriteLine(10 % 3); // 1  // Modulus Op => remainder of 10/3
-            Console.WriteLine(1 + 2 * 3); // 7  // order of operations
-            Console.WriteLine(10 / 3.0); // 3.333333  // int's and doubles
-            Console.WriteLine(10 / 3); // 3  // int's
-            Console.WriteLine("12" + "3"); // 123  // What happens here?
+            // Console.WriteLine(2 * 3); // 6  // Basic Arithmetic: +, -, /, *
+            // Console.WriteLine(10 % 3); // 1  // Modulus Op => remainder of 10/3
+            // Console.WriteLine(1 + 2 * 3); // 7  // order of operations
+            // Console.WriteLine(10 / 3.0); // 3.333333  // int's and doubles
+            // Console.WriteLine(10 / 3); // 3  // int's
+            // Console.WriteLine("12" + "3"); // 123  // What happens here?
 
-            int num = 10;
-            num += 100; // 10 + 100 = 110
-            Console.WriteLine(num); // 110
-            num++; // 110 + 1 = 111
-            Console.WriteLine(num); // 111
+            // int num = 10;
+            // num += 100; // 10 + 100 = 110
+            // Console.WriteLine(num); // 110
+            // num++; // 110 + 1 = 111
+            // Console.WriteLine(num); // 111
 
-            // Booleans
+            // // Booleans
 
-            bool isCold = true;
-            Console.WriteLine(isCold ? "drink" : "add ice"); // output: drink
-            Console.WriteLine(!isCold ? "drink" : "add ice"); // output: add ice
+            // bool isCold = true;
+            // Console.WriteLine(isCold ? "drink" : "add ice"); // output: drink
+            // Console.WriteLine(!isCold ? "drink" : "add ice"); // output: add ice
 
-            // Data Type Conversions
+            // // Data Type Conversions
 
-            string stringNum = "2";
-            Console.WriteLine(stringNum.GetType()); // System.String
-            int newInt = Convert.ToInt16(stringNum);
-            Console.WriteLine(newInt.GetType()); // System.Int32
-            Console.WriteLine(newInt + newInt); // 4
+            // string stringNum = "2";
+            // Console.WriteLine(stringNum.GetType()); // System.String
+            // int newInt = Convert.ToInt16(stringNum);
+            // Console.WriteLine(newInt.GetType()); // System.Int32
+            // Console.WriteLine(newInt + newInt); // 4
 
-            // Data Structures
+            // // Data Structures
 
-            // Dictionaries
+            // // Dictionaries
 
-            Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
+            // Dictionary<string, int> myScoreBoard = new Dictionary<string, int>();
 
-            myScoreBoard.Add("firstInning", 10);
-            myScoreBoard.Add("secondInning", 20);
-            myScoreBoard.Add("thirdInning", 30);
-            myScoreBoard.Add("fourthInning", 40);
-            myScoreBoard.Add("fifthInning", 50);
+            // myScoreBoard.Add("firstInning", 10);
+            // myScoreBoard.Add("secondInning", 20);
+            // myScoreBoard.Add("thirdInning", 30);
+            // myScoreBoard.Add("fourthInning", 40);
+            // myScoreBoard.Add("fifthInning", 50);
 
-            // Alternative example of how you can pass a comma-separated list of key-value pairs in braces,
-            // for each entry we wish to create
-            Dictionary<string, int> myScoreBoard2 = new Dictionary<string, int>(){
-                { "firstInning", 10 },
-                { "secondInning", 20},
-                { "thirdInning", 30},
-                { "fourthInning", 40},
-                { "fifthInning", 50}
-            };
+            // // Alternative example of how you can pass a comma-separated list of key-value pairs in braces,
+            // // for each entry we wish to create
+            // Dictionary<string, int> myScoreBoard2 = new Dictionary<string, int>(){
+            //     { "firstInning", 10 },
+            //     { "secondInning", 20},
+            //     { "thirdInning", 30},
+            //     { "fourthInning", 40},
+            //     { "fifthInning", 50}
+            // };
 
-            Console.WriteLine("----------------");
-            Console.WriteLine("  Scoreboard");
-            Console.WriteLine("----------------");
-            Console.WriteLine("Inning |  Score");
-            Console.WriteLine("   1   |    {0}", myScoreBoard["firstInning"]);
-            Console.WriteLine("   2   |    {0}", myScoreBoard["secondInning"]);
-            Console.WriteLine("   3   |    {0}", myScoreBoard["thirdInning"]);
-            Console.WriteLine("   4   |    {0}", myScoreBoard["fourthInning"]);
-            Console.WriteLine("   5   |    {0}", myScoreBoard["fifthInning"]);
+            // Console.WriteLine("----------------");
+            // Console.WriteLine("  Scoreboard");
+            // Console.WriteLine("----------------");
+            // Console.WriteLine("Inning |  Score");
+            // Console.WriteLine("   1   |    {0}", myScoreBoard["firstInning"]);
+            // Console.WriteLine("   2   |    {0}", myScoreBoard["secondInning"]);
+            // Console.WriteLine("   3   |    {0}", myScoreBoard["thirdInning"]);
+            // Console.WriteLine("   4   |    {0}", myScoreBoard["fourthInning"]);
+            // Console.WriteLine("   5   |    {0}", myScoreBoard["fifthInning"]);
 
-            // Arrays
+            // // Arrays
 
-            string[] favFoods = new String[3]{ "pizza", "doughnuts", "icecream" };
-            string firstFood = favFoods[0];
-            string secondFood = favFoods[1];
-            string thirdFood = favFoods[2];
-            Console.WriteLine("I like {0}, {1}, and {2}", firstFood, secondFood, thirdFood);
+            // string[] favFoods = new String[3]{ "pizza", "doughnuts", "icecream" };
+            // string firstFood = favFoods[0];
+            // string secondFood = favFoods[1];
+            // string thirdFood = favFoods[2];
+            // Console.WriteLine("I like {0}, {1}, and {2}", firstFood, secondFood, thirdFood);
 
-            // Lists
+            // // Lists
 
-            List<string> employees = new List<string>() { "Genesis", "Carson" };
+            // List<string> employees = new List<string>() { "Genesis", "Carson" };
 
-            employees.Add("Hendrix");
-            employees.Add("Jaxx");
-            employees.Add("Lana");
+            // employees.Add("Hendrix");
+            // employees.Add("Jaxx");
+            // employees.Add("Lana");
 
-            Console.WriteLine("My employees include {0}, {1}, {2}, {3}, {4}.", employees[0], employees[1], employees[2], employees[3], employees[4]);
+            // Console.WriteLine("My employees include {0}, {1}, {2}, {3}, {4}.", employees[0], employees[1], employees[2], employees[3], employees[4]);
 
-            // Loops
+            // // Loops
 
+            // for (int i = 0; i < employees.Count; i++) {
+            //     Console.WriteLine(employees[i]);
+            // }
+
+            List<string> employees = new List<string>() { "adam", "amy" };
+            employees.Add("barbara");
+            employees.Add("billy");
+            Console.WriteLine("Please enter a name: ");
+            // Get a name from the console and assign it to a variable
+            string input = Console.ReadLine();
+            employees.Add(input);
             for (int i = 0; i < employees.Count; i++) {
                 Console.WriteLine(employees[i]);
             }
