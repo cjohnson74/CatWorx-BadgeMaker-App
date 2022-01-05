@@ -112,8 +112,16 @@ namespace CatWorx.BadgeMaker
             //     Console.WriteLine(employees[i]);
             // }
 
-            List<string> employees = new List<string>();
             // Collect user values until the value is an empty string
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine(employees[i]);
+            }
+        }
+        static List<string> GetEmployees()
+        {
+            // I will return a List of strings
+            List<string> employees = new List<string>();
             while (true)
             {
                 Console.WriteLine("Please enter a name: ");
@@ -124,10 +132,7 @@ namespace CatWorx.BadgeMaker
                 }
                 employees.Add(input);
             }
-            for (int i = 0; i < employees.Count; i++)
-            {
-                Console.WriteLine(employees[i]);
-            }
+            return employees;
         }
     }
 }
