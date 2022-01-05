@@ -18,6 +18,8 @@ namespace CatWorx.BadgeMaker
                 {
                     break;
                 }
+                // Create a new Employee instance
+                Employee currentEmployee = new Employee();
                 employees.Add(input);
             }
             // This is important! I will return a List of strings
@@ -37,7 +39,7 @@ namespace CatWorx.BadgeMaker
             List<string> employees = GetEmployees();
             // This is our employee-printing code that takes in the employee list created above
             PrintEmployees(employees);
-            
+
             // Console.WriteLine("Hello, World!");
 
             // // Data Types
