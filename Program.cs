@@ -6,8 +6,38 @@ namespace CatWorx.BadgeMaker
 {
     class Program
     {
+        static List<string> GetEmployees()
+        {
+            // Collect user values until the value is an empty string
+            List<string> employees = new List<string>();
+            while (true)
+            {
+                Console.WriteLine("Please enter a name: ");
+                string input = Console.ReadLine();
+                if (input == "")
+                {
+                    break;
+                }
+                employees.Add(input);
+            }
+            // This is important! I will return a List of strings
+            return employees;
+        }
+        static void PrintEmployees(List<string> employees)
+        {
+            // I will print each employee name to the console until the employee count is less than 0
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine(employees[i]);
+            }
+        }
         static void Main(string[] args)
         {
+            // This is our employee-getting code now
+            List<string> employees = GetEmployees();
+            // This is our employee-printing code that takes in the employee list created above
+            PrintEmployees(employees);
+            
             // Console.WriteLine("Hello, World!");
 
             // // Data Types
@@ -111,32 +141,6 @@ namespace CatWorx.BadgeMaker
             // for (int i = 0; i < employees.Count; i++) {
             //     Console.WriteLine(employees[i]);
             // }
-
-            // This is our employee-getting code now
-            List<string> employees = GetEmployees();
-
-            // Collect user values until the value is an empty string
-            for (int i = 0; i < employees.Count; i++)
-            {
-                Console.WriteLine(employees[i]);
-            }
-        }
-        static List<string> GetEmployees()
-        {
-            // I will return a List of strings
-            List<string> employees = new List<string>();
-            while (true)
-            {
-                Console.WriteLine("Please enter a name: ");
-                string input = Console.ReadLine();
-                if (input == "")
-                {
-                    break;
-                }
-                employees.Add(input);
-            }
-            // This is important!
-            return employees;
         }
     }
 }
