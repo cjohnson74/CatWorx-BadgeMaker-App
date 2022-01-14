@@ -19,7 +19,7 @@ namespace CatWorx.BadgeMaker
                     break;
                 }
                 // Create a new Employee instance
-                Employee currentEmployee = new Employee(input);
+                Employee currentEmployee = new Employee(input, "Smith");
                 employees.Add(input);
             }
             // This is important! I will return a List of strings
