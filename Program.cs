@@ -6,13 +6,13 @@ namespace CatWorx.BadgeMaker
 {
     class Program
     {
-        static List<string> GetEmployees()
+        static List<Employee> GetEmployees()
         {
             // Collect user values until the value is an empty string
-            List<string> employees = new List<string>();
+            List<Employee> employees = new List<Employee>();
             while (true)
             {
-                Console.WriteLine("Please enter a name: ");
+                Console.WriteLine("Please enter a name : (leave empty to exit): ");
                 string input = Console.ReadLine();
                 if (input == "")
                 {
@@ -20,7 +20,8 @@ namespace CatWorx.BadgeMaker
                 }
                 // Create a new Employee instance
                 Employee currentEmployee = new Employee(input, "Velson");
-                employees.Add(currentEmployee.GetName());
+                // Add currentEmployee, not a string
+                employees.Add(currentEmployee);
             }
             // This is important! I will return a List of strings
             return employees;
