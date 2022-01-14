@@ -26,18 +26,18 @@ namespace CatWorx.BadgeMaker
             // This is important! I will return a List of strings
             return employees;
         }
-        static void PrintEmployees(List<string> employees)
+        static void PrintEmployees(List<Employee> employees)
         {
             // I will print each employee name to the console until the employee count is less than 0
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine(employees[i]);
+                Console.WriteLine(employees[i].GetName());
             }
         }
         static void Main(string[] args)
         {
             // This is our employee-getting code now
-            List<string> employees = GetEmployees();
+            List<Employee> employees = GetEmployees();
             // This is our employee-printing code that takes in the employee list created above
             PrintEmployees(employees);
 
