@@ -47,7 +47,7 @@ namespace CatWorx.BadgeMaker
 
         public static void MakeBadges(List<Employee> employees) {
             // Create image
-            Image newImage = newImage.FromFile("badge.png");
+            Image newImage = Image.FromFile("badge.png");
             // Save image to a new file
             newImage.Save("data/employeeBadge.png");
         }
