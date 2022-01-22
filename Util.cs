@@ -18,7 +18,7 @@ namespace CatWorx.BadgeMaker
             }
         }
 
-        public static void CreateCSV(List<Employee> employees) {
+        public static void MakeCSV(List<Employee> employees) {
             // Check to see if folder exists
             if (!Directory.Exists("data"))
             {
