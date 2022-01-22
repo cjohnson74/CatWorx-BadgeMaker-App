@@ -13,7 +13,7 @@ namespace CatWorx.BadgeMaker
             while (true)
             {
                 // Move the initial prompt inside the loop, so it repeats for each employee
-                Console.WriteLine("Please enter a name : (leave empty to exit): ");
+                Console.WriteLine("Please enter a first name : (leave empty to exit): ");
 
                 // change input to firstName
                 string firstName = Console.ReadLine();
