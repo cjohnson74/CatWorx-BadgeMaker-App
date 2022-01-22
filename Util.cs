@@ -1,5 +1,6 @@
 // Import correct packages for methods
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 namespace CatWorx.BadgeMaker
