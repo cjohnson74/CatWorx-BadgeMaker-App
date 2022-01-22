@@ -42,6 +42,7 @@ namespace CatWorx.BadgeMaker
             // I will print each employee name to the console until the employee count is less than 0
             for (int i = 0; i < employees.Count; i++)
             {
+                string template = "{0,-10}\t{1,-20}\t{2}";
                 Console.WriteLine(employees[i].GetName());
             }
         }
