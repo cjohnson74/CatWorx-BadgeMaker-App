@@ -30,6 +30,14 @@ namespace CatWorx.BadgeMaker
                 {
                     // Any code that needs the StreamWriter would go in here
                     file.WriteLine("ID,Name,PhotoUrl");
+
+                    // Loop over employees
+                    for (int i = 0; i < employees.Count; i++)
+                    {
+                        // Write each employee to the file
+                        string template = "{0},{1},{2}";
+                        file.WriteLine(String.Format(template, employees[i].GetId(), employees[i].GetName(), employees[i].GetPhotoUrl()));
+                    }
                 }
             }
         }
