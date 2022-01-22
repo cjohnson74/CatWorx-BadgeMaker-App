@@ -1,3 +1,7 @@
+// Import correct packages for methods
+using System;
+using System.Collections.Generic;
+
 namespace CatWorx.BadgeMaker
 {
     class Util

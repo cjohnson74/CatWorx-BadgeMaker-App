@@ -37,13 +37,13 @@ namespace CatWorx.BadgeMaker
             // This is important! It will return a List of strings
             return employees;
         }
-        
+
         static void Main(string[] args)
         {
             // This is our employee-getting code now
             List<Employee> employees = GetEmployees();
             // This is our employee-printing code that takes in the employee list created above
-            PrintEmployees(employees);
+            Util.PrintEmployees(employees);
 
 
             // ================================= Intro to C# ===================================== //
