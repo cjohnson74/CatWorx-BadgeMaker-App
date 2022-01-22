@@ -45,6 +45,7 @@ namespace CatWorx.BadgeMaker
             // This is our employee-printing code that takes in the employee list created above
             Util.PrintEmployees(employees);
             Util.MakeCSV(employees);
+            Util.MakeBadges();
 
 
             // ================================= Intro to C# ===================================== //
