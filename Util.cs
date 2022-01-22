@@ -24,12 +24,12 @@ namespace CatWorx.BadgeMaker
             {
                 // If, not create it
                 Directory.CreateDirectory("data");
-                // This creates a new CSV file in teh data folder/directory
-                StreamWriter file = new StreamWriter("data/employees.csv");
-                // This manually disposes fo the StreamWriter object, to save memory
+                // This creates new CSV file in the data folder/directory
+                // The using statement manually disposes fo the StreamWriter object, to save memory
                 using (StreamWriter file = new StreamWriter("data/employees.csv"))
                 {
                     // Any code that needs the StreamWriter would go in here
+                    file.WriteLine("ID,Name,PhotoUrl");
                 }
             }
         }
