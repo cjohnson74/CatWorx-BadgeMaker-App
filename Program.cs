@@ -34,7 +34,7 @@ namespace CatWorx.BadgeMaker
                 // Add currentEmployee, not a string
                 employees.Add(currentEmployee);
             }
-            // This is important! I will return a List of strings
+            // This is important! It will return a List of strings
             return employees;
         }
         static void PrintEmployees(List<Employee> employees)
