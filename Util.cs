@@ -7,7 +7,7 @@ namespace CatWorx.BadgeMaker
     class Util
     {
         // Add List parameter to method
-        public static void PrintEmployee(List<Employee> employees)
+        public static void PrintEmployees(List<Employee> employees)
         {
             // I will print each employee name to the console until the employee count is less than 0
             for (int i = 0; i < employees.Count; i++)
