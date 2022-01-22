@@ -43,7 +43,7 @@ namespace CatWorx.BadgeMaker
             for (int i = 0; i < employees.Count; i++)
             {
                 string template = "{0,-10}\t{1,-20}\t{2}";
-                Console.WriteLine(employees[i].GetName());
+                Console.WriteLine(String.Format(template, employees[i].GetId(), employees[i].GetName(), employees[i].GetPhotoUrl()));
             }
         }
         static void Main(string[] args)
