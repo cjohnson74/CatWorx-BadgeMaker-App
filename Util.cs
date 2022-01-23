@@ -2,7 +2,11 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Drawing;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Drawing;
+using SixLabors.ImageSharp.Drawing.Processing;
+// using System.Drawing;
 
 namespace CatWorx.BadgeMaker
 {
@@ -47,7 +51,7 @@ namespace CatWorx.BadgeMaker
 
         public static void MakeBadges(List<Employee> employees) {
             // Create image
-            Image newImage = Image.FromFile("badge.png");
+            Image newImage = Image.Load("badge.png");
             // Save image to a new file
             newImage.Save("data/employeeBadge.png");
         }
