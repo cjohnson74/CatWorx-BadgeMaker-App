@@ -82,7 +82,10 @@ namespace CatWorx.BadgeMaker
             // instance of WebClient is disposed after code in the block has run
             using(WebClient client = new WebClient())
             {
-                
+                for (int i = 0; i < employees.Count; i++)
+                {
+                    
+                }
             }
         }
     }
