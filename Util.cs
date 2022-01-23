@@ -79,6 +79,11 @@ namespace CatWorx.BadgeMaker
             Image newImage = Image.Load("badge.png");
             // Save image to a new file
             newImage.Save("data/employeeBadge.png");
+            // instance of WebClient is disposed after code in the block has run
+            using(WebClient client = new WebClient())
+            {
+                
+            }
         }
     }
 }
