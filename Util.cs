@@ -1,12 +1,13 @@
 // Import correct packages for methods
 using System;
 using System.IO;
-using System.Collections.Generic;
+using System.Net;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp.Drawing;
 using SixLabors.ImageSharp.Drawing.Processing;
-// using System.Drawing;
+using System.Collections.Generic;
+
 
 namespace CatWorx.BadgeMaker
 {
@@ -73,7 +74,7 @@ namespace CatWorx.BadgeMaker
             int EMPLOYEE_ID_START_Y = 690;
             int EMPLOYEE_ID_WIDTH = BADGE_WIDTH;
             int EMPLOYEE_ID_HEIGHT = 100;
-            
+
             // Create image
             Image newImage = Image.Load("badge.png");
             // Save image to a new file
