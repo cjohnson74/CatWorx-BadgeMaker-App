@@ -2,10 +2,13 @@
 using System;
 using System.IO;
 using System.Net;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.Processing;
-using SixLabors.ImageSharp.Drawing;
-using SixLabors.ImageSharp.Drawing.Processing;
+// using SixLabors.ImageSharp;
+using System.Drawing;
+// using SixLabors.ImageSharp.Advanced;
+// using SixLabors.ImageSharp.Processing;
+// using SixLabors.ImageSharp.Drawing;
+// using SixLabors.ImageSharp.Drawing.Processing;
+// using SixLabors.ImageSharp.Formats.Bmp;
 using System.Collections.Generic;
 
 
@@ -76,7 +79,7 @@ namespace CatWorx.BadgeMaker
             int EMPLOYEE_ID_HEIGHT = 100;
 
             // Create image
-            Image newImage = Image.Load("badge.png");
+            Image newImage = Image.FromFile("badge.png");
             // Save image to a new file
             newImage.Save("data/employeeBadge.png");
             // instance of WebClient is disposed after code in the block has run
@@ -84,9 +87,10 @@ namespace CatWorx.BadgeMaker
             {
                 for (int i = 0; i < employees.Count; i++)
                 {
-                    Image photo = Image.Load(client.OpenRead(employees[i].GetPhotoUrl()));
-                    Image background = Image.Load("badge.png");
-                    background.Save("data/employeeBadge.png");
+                    Image photo = Image.FromStream(client.OpenRead(employees[i].GetPhotoUrl()));
+                    Image background = Image.FromFile("badge.png");
+                    // background.Save("data/employeeBadge.png");
+                    Image badge = new Bitmap(BADGE_WIDTH, BADGE_HEIGHT);
                 }
             }
         }
