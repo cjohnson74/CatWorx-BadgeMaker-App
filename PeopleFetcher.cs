@@ -36,5 +36,11 @@ namespace CatWorx.BadgeMaker {
             // This is important! It will return a List of strings
             return employees;
         }
+
+        public static List<Employee> GetFromAPI()
+        {
+            List<Employee> employees = new List<Employee>();
+            return employees;
+        }
     }
 }
