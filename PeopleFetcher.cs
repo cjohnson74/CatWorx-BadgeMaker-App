@@ -5,7 +5,7 @@ namespace CatWorx.BadgeMaker {
     class PeopleFetcher
     {
         // code from GetEmployees in Program.cs
-        static List<Employee> GetEmployees()
+        public static List<Employee> GetEmployees()
         {
             // Collect user values until the value is an empty string
             List<Employee> employees = new List<Employee>();
