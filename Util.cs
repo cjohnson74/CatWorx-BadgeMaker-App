@@ -85,6 +85,7 @@ namespace CatWorx.BadgeMaker
                 for (int i = 0; i < employees.Count; i++)
                 {
                     Stream employeeStream = client.OpenRead(employees[i].GetPhotoUrl());
+                    Image photo = Image.Load(employeeStream);
                 }
             }
         }
