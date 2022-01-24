@@ -82,8 +82,16 @@ namespace CatWorx.BadgeMaker
             Image newImage = Image.FromFile("badge.png");
             // Save image to a new file
             newImage.Save("data/employeeBadge.png");
+            //Graphics objects
+            StringFormat format = new StringFormat();
+            format.Alignment = StringAlignment.Center;
+            int FONT_SIZE = 32;
+            Font font = new Font("Ariel", FONT_SIZE);
+            Font monoFont = new Font("Courier New", FONT_SIZE);
+
+            SolidBrush brush = new SolidBrush(Color.Black);
             // instance of WebClient is disposed after code in the block has run
-            using(WebClient client = new WebClient())
+            using (WebClient client = new WebClient())
             {
                 for (int i = 0; i < employees.Count; i++)
                 {
@@ -94,7 +102,6 @@ namespace CatWorx.BadgeMaker
                     Graphics graphic = Graphics.FromImage(badge);
                     graphic.DrawImage(background, new Rectangle(0, 0, BADGE_WIDTH, BADGE_HEIGHT));
                     graphic.DrawImage(photo, new Rectangle(PHOTO_START_X, PHOTO_START_Y, PHOTO_WIDTH, PHOTO_HEIGHT));
-                    badge.Save("data/employeeBadge.png");
                 }
             }
         }
