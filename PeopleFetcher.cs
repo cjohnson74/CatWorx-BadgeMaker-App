@@ -41,6 +41,11 @@ namespace CatWorx.BadgeMaker {
         public static List<Employee> GetFromAPI()
         {
             List<Employee> employees = new List<Employee>();
+            using (WebClient client = new WebClient())
+            {
+                // Image example
+                string response = client.DownloadString("https://randomuser.me/api/?results=10&nat=us&inc=name,id,picture");
+            }
             return employees;
         }
     }
