@@ -92,6 +92,7 @@ namespace CatWorx.BadgeMaker
                     // background.Save("data/employeeBadge.png");
                     Image badge = new Bitmap(BADGE_WIDTH, BADGE_HEIGHT);
                     Graphics graphic = Graphics.FromImage(badge);
+                    graphic.DrawImage(background, new Rectangle(0, 0, BADGE_WIDTH, BADGE_HEIGHT));
                 }
             }
         }
