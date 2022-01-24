@@ -118,14 +118,27 @@ namespace CatWorx.BadgeMaker
                     graphic.DrawString(
                         employees[i].GetName(),
                         font,
-                        new SolidBrush(Color.Black),
+                        brush,
                         new Rectangle(
                             EMPLOYEE_NAME_START_X,
-                            EMPLOYEE_ID_START_Y,
+                            EMPLOYEE_NAME_START_Y,
                             BADGE_WIDTH,
                             EMPLOYEE_NAME_WIDTH
                         ),
                     format
+                    );
+                    // Employee Id
+                    graphic.DrawString(
+                        employees[i].GetId().ToString(),
+                        font,
+                        brush,
+                        new Rectangle(
+                            EMPLOYEE_ID_START_X,
+                            EMPLOYEE_ID_START_Y,
+                            EMPLOYEE_ID_WIDTH,
+                            EMPLOYEE_ID_HEIGHT
+                        ),
+                        format
                     );
                     badge.Save("data/employeeBadge.png");
                 }
