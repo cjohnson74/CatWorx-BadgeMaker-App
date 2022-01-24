@@ -114,7 +114,20 @@ namespace CatWorx.BadgeMaker
                         ),
                     format
                     );
-                    // background.Save("data/employeeBadge.png");
+                    // Employee name
+                    graphic.DrawString(
+                        employees[i].GetName(),
+                        font,
+                        new SolidBrush(Color.Black),
+                        new Rectangle(
+                            EMPLOYEE_NAME_START_X,
+                            EMPLOYEE_ID_START_Y,
+                            BADGE_WIDTH,
+                            EMPLOYEE_NAME_WIDTH
+                        ),
+                    format
+                    );
+                    badge.Save("data/employeeBadge.png");
                 }
             }
         }
