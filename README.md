@@ -79,7 +79,7 @@ I used C# to build a console app that creates employee security badges for a rap
 # Reflection
 I feel I did a great job implementing and working through dense concepts, syntax, and package installs. The application is now properly situated to receive a response from an API and produce security badges. I have successfully automated the badge creation process, and now CatWorx can spend more time focusing on their core products and services!
 
-## Now that I have reached the end, I want to take a moment and reflect on some of the key tasks I accomplished using C#:
+### Now that I have reached the end, I want to take a moment and reflect on some of the key tasks I accomplished using C#:
 - Set up the development environment by installing a VS Code extension and the .NET Core SDK.
 - Used namespaces to organize the code and import libraries from the .NET framework.
 - Defined functions and classes by using C# syntax.
