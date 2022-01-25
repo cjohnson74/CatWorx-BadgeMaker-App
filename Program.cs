@@ -8,8 +8,27 @@ namespace CatWorx.BadgeMaker
     {
         static void Main(string[] args)
         {
-            // This is our employee-getting code now
-            List<Employee> employees = PeopleFetcher.GetFromAPI();
+            List<Employee> employees = null;
+            Console.WriteLine("Would you like to fetch employee data from the API or Manual Enter: (type either '1' or '2'):");
+            Console.WriteLine("1: Fetch Employee Data From the API");
+            Console.WriteLine("2: Manually Enter Employee Data");
+            string input = Console.ReadLine();
+            if (input == "1")
+            {
+                employees = PeopleFetcher.GetFromAPI();
+            }
+            else if (input == "2")
+            {
+                employees = PeopleFetcher.GetEmployees();
+            }
+            else
+            {
+                System.Environment.Exit(1);
+                
+            }
+
+            // // This is our employee-getting code now
+            // List<Employee> employees = PeopleFetcher.GetFromAPI();
             // This is our employee-printing code that takes in the employee list created above
             Util.PrintEmployees(employees);
             Util.MakeCSV(employees);
