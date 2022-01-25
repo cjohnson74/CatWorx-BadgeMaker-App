@@ -29,7 +29,7 @@ I used C# to build a console app that creates employee security badges for a rap
 
 # CatWorx BadgeMaker Steps
 <p align="center">
-<img hieght="100" width="200" src="/data/27143088_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img hieght="100" width="200" src="/data/191671695_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img hieght="100" width="200" src="/data/463856628_badge.png">
+<img hieght="100" width="200" src="/data/27143088_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img hieght="100" width="200" src="/data/191671695_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img hieght="100" width="200" src="/data/463856628_badge.png">
 </p>
 
 ## Storing Employee Data
