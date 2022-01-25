@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 
 namespace CatWorx.BadgeMaker {
     class PeopleFetcher
@@ -45,6 +46,7 @@ namespace CatWorx.BadgeMaker {
             {
                 // Image example
                 string response = client.DownloadString("https://randomuser.me/api/?results=10&nat=us&inc=name,id,picture");
+                Console.WriteLine(response);
             }
             return employees;
         }
