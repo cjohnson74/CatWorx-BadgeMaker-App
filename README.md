@@ -35,9 +35,43 @@ I used C# to build a console app that creates employee security badges for a rap
 - Create and instantiate a new class.
 - Refactor the code along the way to keep the project organized, maintainable, and extensible.
 ### Approach:
-1. Prompt the user and store their employee data.
-2. Organize the code using methods with single responsibility.
-3. Create a class to hold the employee objects.
-4. Print the employee information.
+1. Prompted the user and store their employee data.
+2. Organized the code using methods with single responsibility.
+3. Created a class to hold the employee objects.
+4. Printed the employee information.
 
+## Statically Write Data
+### Learned how to:
+- Use ``static`` to keep code neatly organized.
+- Populate a CSV file with ``Util``.
+- Manage memory with the ``using`` keyword.
+### Approach:
+1. Created a ``Util`` class, which is used to populate the CSV file.
+2. Created the ``data`` folder to house the CSV file.
+3. Imported the ``System.IO`` namespace in order to enable writing to a CSV file.
 
+## Create the Badges
+### Learned how to:
+- Use pseudocode to break down each step ahead of time and outline your workflow.
+- Research and use classes and methods to manipulate images and text.
+- Convert objects into more usable data types.
+- Designate placement and size of text or images using ``Rectangle``.
+- Create a new file with ``Save()`` method.
+### Approach:
+1. Imported the badge template image file that worked as the background image.
+2. Customized each employee's badge by adding information specific to each employee-namely, the employee's name, picture, and id number.
+3. Added this new image file to the data folder.
+
+## Download the Data
+### Learned how to:
+- Request data from an API (Random User Generator API).
+- Convert JSON to C# data types.
+- Create a new employee for each person that I fetch from the API.
+### Approach:
+1. Generated employee data by using the Random User Generator API.
+2. Pseudocoded the steps.
+3. Prepared the ``PeopleFetcher`` class.
+4. Called the API.
+5. Converted the JSON.
+6. Created the employees.
+7. Added the finishing touches.
