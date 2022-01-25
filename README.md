@@ -75,3 +75,18 @@ I used C# to build a console app that creates employee security badges for a rap
 5. Converted the JSON.
 6. Created the employees.
 7. Added the finishing touches.
+
+# Reflection
+I feel I did a great job implementing and working through dense concepts, syntax, and package installs. The application is now properly situated to receive a response from an API and produce security badges. I have successfully automated the badge creation process, and now CatWorx can spend more time focusing on their core products and services!
+
+## Now that I have reached the end, I want to take a moment and reflect on some of the key tasks I accomplished using C#:
+- Set up the development environment by installing a VS Code extension and the .NET Core SDK.
+- Used namespaces to organize the code and import libraries from the .NET framework.
+- Defined functions and classes by using C# syntax.
+- Used the ``System.IO`` namespace to write to a CSV file.
+- Imported the ``System.Drawing.Common`` package to use graphics tools to create the badge template background.
+- Used the ``WebClient`` class to insert employee data into the badge template.
+
+Although many differenece are evident between C# and JavaScript, there are also many similarities that reduced the learning curve, such as understanding the leveraging the object-oriented approach to programming.
+
+With my newfound familiarity with C#, a new world of development possibilities has emerged. C# is exceptionally versatile. Along with the .NET framework and a few extensions, I can use it to create many different types of apps, imcluding mobile, web, desktop, cloud, and even gaming. By adding C# to my skill set, I have added a modern general-purpose language known for its speed and reliability with a vast community of resources and developers (including the backing of Microsoft!), which ensures a long and successful development existence.
