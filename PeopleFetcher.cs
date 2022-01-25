@@ -46,7 +46,7 @@ namespace CatWorx.BadgeMaker {
             {
                 // Image example
                 string response = client.DownloadString("https://randomuser.me/api/?results=10&nat=us&inc=name,id,picture");
-                Console.WriteLine(response);
+                JObject json = JObject.Parse(response);
             }
             return employees;
         }
