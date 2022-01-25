@@ -28,9 +28,9 @@ I used C# to build a console app that creates employee security badges for a rap
   - For Loop
 
 # CatWorx BadgeMaker Steps
-/Users/carsonjohnson/Documents/CSharp/CatWorx-BadgeMaker-App/data/27143088_badge.png
-/Users/carsonjohnson/Documents/CSharp/CatWorx-BadgeMaker-App/data/191671695_badge.png
-/Users/carsonjohnson/Documents/CSharp/CatWorx-BadgeMaker-App/data/463856628_badge.png
+<img src="/data/27143088_badge.png">
+<img src="/data/191671695_badge.png">
+<img src="/data/463856628_badge.png">
 ## Storing Employee Data
 ### Learned how to:
 - Interact with users via the command-line interface (CLI).
