@@ -24,7 +24,7 @@ namespace CatWorx.BadgeMaker
             else
             {
                 System.Environment.Exit(1);
-                
+
             }
 
             // // This is our employee-getting code now
