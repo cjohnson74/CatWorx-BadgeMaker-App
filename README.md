@@ -2,6 +2,7 @@
 I used C# to build a console app that creates employee security badges for a rapidly expanding startup, CatWorx. I used the .NET framework to import libraries that let me read and write to the file system, query APIs, and generate images.
 
 # The Fundementals
+
 ## Before starting on the CatWorx BadgeMaker App I started with the fundementals:
 
 - Created a "Hello, World" App
@@ -29,7 +30,7 @@ I used C# to build a console app that creates employee security badges for a rap
 
 # CatWorx BadgeMaker Steps
 <p align="center">
-<img hieght="100" width="200" src="/data/27143088_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img hieght="100" width="200" src="/data/191671695_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img hieght="100" width="200" src="/data/463856628_badge.png">
+<img hieght="100" width="200" src="/data/27143088_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img hieght="100" width="200" src="/data/191671695_badge.png">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img hieght="100" width="200" src="/data/463856628_badge.png">
 </p>
 
 ## Storing Employee Data
