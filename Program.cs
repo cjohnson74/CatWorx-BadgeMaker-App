@@ -24,9 +24,7 @@ namespace CatWorx.BadgeMaker
             else
             {
                 System.Environment.Exit(1);
-
             }
-
             // This is our employee-printing code that takes in the employee list created above
             Util.PrintEmployees(employees);
             Util.MakeCSV(employees);
