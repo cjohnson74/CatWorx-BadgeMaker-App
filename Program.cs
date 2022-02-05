@@ -32,7 +32,6 @@ namespace CatWorx.BadgeMaker
             Util.MakeCSV(employees);
             Util.MakeBadges(employees);
 
-
             // ================================= Intro to C# ===================================== //
 
             // Console.WriteLine("Hello, World!");
